@@ -1,11 +1,11 @@
-import { BrowserRouter, Route } from "react-router-dom/cjs/react-router-dom.min";
+import { BrowserRouter, Link, Route } from "react-router-dom/cjs/react-router-dom.min";
 
 const PageOne = () => {
-    return <div>PageOne</div>;
+    return <div>PageOne <Link to="/pageTwo">PageTwo</Link></div>;
 }
 
 const PageTwo = () => {
-    return <div>PageTwo</div>;
+    return <div><Link to="/">PageOne</Link> PageTwo </div>;
 }
 
 export const App = () => {
